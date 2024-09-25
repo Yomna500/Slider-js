@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn how to improve your website’s SEO performance with tips on page speed, mobile optimization, content creation, and more." />
+    <title>My Advanced Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+       <h1>My Advanced Blog</h1>
+       <!-- Navigation Bar  -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!-- Bootstrap Nav Bar Responsive  -->
+        <div class="container-fluid">
+          <!-- Nav Bar Become One word in smaller screens -->
+          <button class="navbar-toggler nav-btn" style="color: white; " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon nav-open">More</span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav nav-links">
+              <!-- Links of navigations -->
+              <a class="nav-link active " aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">Portfolio</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mt-5">
+      <div class="row">
+        <div class="col-md-8">
+          <!-- Article First   -->
+           <!-- a card From Bootstrap for better apperrnce and responseive -->
+          <article class="post">
+            <div class="card"  style="border: none;">
+              <div class="card-body"> 
+                <h2 class="card-title">First Advanced Article Title</h2>
+                <p class="card-text">This is some sample text for the first article. The full content
+                  of the article could be displayed here. Feel free to add more
+                  content and style it as needed.</p>
+                <button href="#" class="btn ">Read More</button>
+              </div>
+            </div>
+
+          </article>
+          <!-- Article Second -->
+           <!-- A second Article with the same strcture -->
+          <article class="post">
+            <div class="card"  style="border: none;">
+              <div class="card-body"> 
+                <h2 class="card-title">Second Advanced Article Title</h2>
+                <p class="card-text"> This is some sample text for the second article. The full content
+                  of the article could be displayed here. Experiment with different
+                  layouts and design enhancements.</p>
+                <button href="#" class="btn ">Read More</button>
+              </div>
+            </div>
+          </article>
+          <!-- Article third -->
+          <article class="post">
+             <!-- A third Article with the same strcture -->
+
+            <div class="card"  style="border: none;">
+              <div class="card-body"> 
+                <h2 class="card-title">Third Advanced Article Title</h2>
+                <p class="card-text">  This is some sample text for the third article. Challenge yourself
+                  to add more features and make the blog more interactive and
+                  user-friendly..</p>
+                <button href="#" class="btn ">Read More</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Aside -->
+        <aside class="col-md-4">
+          <!-- First section for links -->
+          <section class="sidebar">
+            <h3>About the Blog</h3>
+            <p>
+              This blog is more advanced, requiring enhancements and
+              restructuring. Consider adding more sections and making it dynamic
+              with JavaScript.
+            </p>
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About the Author</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Portfolio</a></li>
+            </ul>
+          </section>
+          <section class="sidebar">
+            <!-- secound section for easy search -->
+            <h3>Recent Posts</h3>
+            <ul>
+              <li><a href="#">How to Improve Your Blog</a></li>
+              <li><a href="#">Understanding CSS Grid</a></li>
+              <li><a href="#">10 JavaScript Tips and Tricks</a></li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+      <section>
+        <!-- A Button to go to the top when scrol down 30px  -->
+        <button id="up"style='font-size:30px; color:white; ' onclick="topFunction()"> &#11014</button>
+      </section>
+    </main>
+
+    <!-- Footer with a simple form and copy rights -->
+    <footer class="footer">
+      <div class="mb-3"style="width: 50%; margin: auto; ">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your E-mail" >
+      </div>
+      <div class="mb-3" style="width: 50%; margin: auto;">
+        <label for="exampleFormControlTextarea1" class="form-label" >Your Suggetions</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <p>All Rights Reserved © 2024 | Designed by Yomna Adel</p>
+
+    </footer>
+
+    <!-- scripts aone for the bootstrap and the other for the main script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

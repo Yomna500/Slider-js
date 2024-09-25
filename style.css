@@ -1,0 +1,154 @@
+/* variables for colors , space and shodow */
+:root {
+  /* Color Variable */
+  --background-color: #ffffff;
+  --footer-text-color: #ffffff;
+  --font-color: #333333; /*  better contrast */
+  --background-color2: #f8f9fa;
+  --background-color3: #007bff;
+  --background-color-btn: #00579e;
+  --background-color3-hover: #002747;
+
+  /* Spacung */
+  --spacing-small: 20px;
+
+  /* Shadows */
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+/* Header */
+.header {
+  background-color: var(--background-color-btn);
+  color: var(--footer-text-color);
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+}
+.header a {
+  color: var(--background-color);
+}
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+  background-color: var(--background-color);
+}
+/* Nav */
+.nav-open {
+  width: auto;
+  height: auto;
+}
+.nav-btn {
+  margin: auto;
+}
+
+.nav-links {
+  margin-top: var(--spacing-small);
+  margin: auto;
+  font-weight: 400;
+}
+.nav-links a {
+  color: var(--footer-text-color);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  color: var(--background-color);
+}
+/* Article */
+.post {
+  border: 1px solid #ddd;
+  margin-bottom: var(--spacing-small);
+  padding: var(--spacing-small);
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.post h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.post p {
+  color: #666;
+  line-height: 1.6;
+}
+.post button {
+  background-color: var(--background-color-btn);
+  color: var(--background-color);
+  border: none;
+}
+.post button:hover {
+  background-color: var(--background-color3-hover);
+  color: var(--background-color);
+}
+/* Aside */
+.sidebar {
+  background-color: var(--background-color2);
+  padding: var(--spacing-small);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: var(--spacing-small);
+}
+.sidebar h3 {
+  margin-bottom: var(--spacing-small);
+  font-size: 1.2rem;
+}
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+.sidebar ul li a {
+  color: var(--background-color-btn);
+  text-decoration: none;
+}
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+/* Button to top */
+#up {
+  display: none;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 30px;
+  border-radius: 25px;
+  z-index: 99;
+  border: none;
+  background-color: var(--background-color-btn);
+  cursor: pointer;
+}
+
+.up:hover {
+  background-color: var(--background-color3-hover);
+}
+/* Footer */
+.footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: var(--spacing-small);
+  margin-top: 40px;
+}
+.footer p {
+  margin: 0;
+}
